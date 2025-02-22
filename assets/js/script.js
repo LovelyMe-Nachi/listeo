@@ -1,0 +1,91 @@
+// responsive header
+const headerMenuBtn = document.querySelector(".small-screen-menu");
+const closeMenuBtn = document.querySelector(".close-small-screen-nav");
+const smallScreenNav = document.querySelector(".small-screen-nav");
+
+headerMenuBtn.addEventListener("click", () => {
+    smallScreenNav.style.left = "0";
+});
+
+closeMenuBtn.addEventListener("click", () => {
+    smallScreenNav.style.left = "-1000px";
+});
+
+
+// header scroll event
+window.addEventListener('scroll', (event)=>{
+    const height = window.scrollY;
+    const header = document.querySelector("header");
+
+    if (height > 400){
+        header.style.position = "fixed";
+        header.style.top = '0';
+        header.style.zIndex = "999";
+        header.style.boxShadow = '0 10px 15px rgba(25,25,25,0.1)';
+    } else {
+        header.style.position = "relative";
+        header.style.boxShadow = 'none';
+    }
+})
+
+
+// hero typewriting functionality
+const heroTypewriter = document.querySelector('.hero-typewriter');
+const texts = ["Comfort Your Priority.", "Celebrations Effortless.", "Every Bite Delicious.", "Moments Last Forever.", "Adventures Memorable.", "Fitness Fun."];
+let textIndex = 0;
+let heroCharIndex = 0;
+let clearTexts = false;
+
+function typeWriter() {
+    const currentText = texts[textIndex];
+
+    if (!clearTexts) {
+        heroTypewriter.textContent = currentText.substring(0, heroCharIndex + 1);
+        heroCharIndex++;
+
+        if (heroCharIndex === currentText.length) {
+            clearTexts = true;
+            setTimeout(typeWriter, 2000);
+        } else {
+            setTimeout(typeWriter, 100);
+        }
+    } else {
+        heroTypewriter.textContent = currentText.substring(0, heroCharIndex - 1);
+        heroCharIndex--;
+
+        if (heroCharIndex === 0) {
+            clearTexts = false;
+            textIndex = (textIndex + 1) % texts.length;
+            setTimeout(typeWriter, 500);
+        } else {
+            setTimeout(typeWriter, 50);
+        }
+    }
+}
+typeWriter();
+
+// listeo hero-slides 
+const slides = document.querySelectorAll(".background-slide");
+let currentSlide = 0;
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+}
+
+document.querySelector(".hero-next").addEventListener("click", nextSlide);
+document.querySelector(".hero-prev").addEventListener("click", prevSlide);
+
+setInterval(nextSlide, 7000);
