@@ -11,7 +11,6 @@ closeMenuBtn.addEventListener("click", () => {
     smallScreenNav.style.left = "-1000px";
 });
 
-
 // header scroll event
 window.addEventListener('scroll', (event)=>{
     const height = window.scrollY;
@@ -89,3 +88,16 @@ document.querySelector(".hero-next").addEventListener("click", nextSlide);
 document.querySelector(".hero-prev").addEventListener("click", prevSlide);
 
 setInterval(nextSlide, 7000);
+
+// back to top
+const topLimit = 800;
+window.addEventListener("scroll", ()=>{
+    const scroll = window.scrollY;
+    const back_to_top = document.querySelector(".back_to_top");
+
+    if (scroll >= topLimit) {
+        back_to_top.style.visibility = 'visible';
+    } else {
+        back_to_top.style.visibility = 'hidden';
+    }
+})
