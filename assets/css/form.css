@@ -184,9 +184,9 @@
 }
 
 .form_wrapper .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: var(--primary-color);
+	background: -webkit-linear-gradient(to right, var(--linear-color), var(--primary-color));
+	background: linear-gradient(to right, var(--linear-color), var(--primary-color));
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -210,7 +210,7 @@
 	position: absolute;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center;transition: ;
 	flex-direction: column;
 	padding: 0 40px;
 	text-align: center;

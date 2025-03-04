@@ -61,6 +61,70 @@
     </section>
     <!-- hero section end -->
 
+    <!-- trusted-companies -->
+    <section class="trusted-companies">
+        <h2 class="listeo-intro-heading">Trusted by Cutting-Edge Companies</h2>
+
+        <div class="trusted-companies-container">
+            <div>
+                <img src="assets/images/trusted-clients/trusted-companies1.webp" alt="">
+            </div>
+            <div>
+                <img src="assets/images/trusted-clients/trusted-companies2.webp" alt="">
+            </div>
+            <div>
+                <img src="assets/images/trusted-clients/trusted-companies3.webp" alt="">
+            </div>
+            <div>
+                <img src="assets/images/trusted-clients/trusted-companies4.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- trusted-companies end -->
+
+    <!-- about-us -->
+    <section class="about-us">
+        <h2 class="listeo-intro-heading">Why choose us?</h2>
+        <div class="about-us-wrapper">
+            <div class="about-us-col about-us-text-col">
+                <div class="about-us-heading">
+                    <h2>outcomes that <span> keep you growing</span></h2>
+                </div>
+                <p class="about-us-text">Join over 9,000 brands that have opted for our platform over competitors, for an advanced review collection solution.</p>
+                <ul>
+                    <li><span><i class="fa-solid fa-check"></i></span> More Afforable Cost</li>
+                    <li><span><i class="fa-solid fa-check"></i></span> The Insight Gained is Much Wider</li>
+                    <li><span><i class="fa-solid fa-check"></i></span> Exploration of good and tasty meals</li>
+                    <li><span><i class="fa-solid fa-check"></i></span> More Flexible Study Time</li>
+                    <li><span><i class="fa-solid fa-check"></i></span> Extremly High Sucess Rate</li>
+                </ul>
+            </div>
+            <div class="about-us-col about-us-img-col">
+                <svg class="blob blob1" viewBox="0 0 500 500">
+                    <path fill="#F8AEBB" d="M438,312.5Q401,375,338,398Q275,421,225,397Q175,373,139,324.5Q103,276,101,215Q99,154,145.5,114Q192,74,242,84Q292,94,347,109.5Q402,125,437,177.5Q472,230,438,312.5Z"/>
+                </svg>
+            
+                <div class="img-path">
+                    <img src="assets/images/about-img/outcomes.webp" alt="">
+                </div>
+
+                <svg class="blob blob2" viewBox="0 0 500 500">
+                    <path fill="#F07189" d="
+                        M250,150  
+                        Q180,80,100,140  
+                        Q40,200,70,280  
+                        Q100,350,180,390  
+                        Q250,430,320,390  
+                        Q400,350,430,280  
+                        Q460,200,400,140  
+                        Q320,80,250,150Z" />
+                </svg>
+            
+            </div>
+        </div>
+    </section>
+    <!-- about-us end -->
+
     <!-- popular categories -->
     <!-- <section class="popular-categories">
         <h2 class="listeo-intro-heading">popular categories</h2>
@@ -390,27 +454,6 @@
     <section class="customers-reviews"></section>
     <!-- customers reviews end -->
 
-    <!-- trusted-companies -->
-    <section class="trusted-companies">
-        <h2 class="listeo-intro-heading">Trusted by Cutting-Edge Companies</h2>
-
-        <div class="trusted-companies-container">
-            <div>
-                <img src="assets/images/trusted-clients/trusted-companies1.webp" alt="">
-            </div>
-            <div>
-                <img src="assets/images/trusted-clients/trusted-companies2.webp" alt="">
-            </div>
-            <div>
-                <img src="assets/images/trusted-clients/trusted-companies3.webp" alt="">
-            </div>
-            <div>
-                <img src="assets/images/trusted-clients/trusted-companies4.webp" alt="">
-            </div>
-        </div>
-    </section>
-    <!-- trusted-companies end -->
-
     <!-- streamline your business -->
     <section class="business-streamline">
         <div class="business-streamline-text">
@@ -549,49 +592,6 @@
         </div>
     </section>
     <!-- from the blog end -->
-
-    <!-- outcomes -->
-    <section class="outcomes">
-        <h2 class="listeo-intro-heading">Why choose us?</h2>
-        <div class="outcomes-wrapper">
-            <div class="outcomes-col outcomes-text-col">
-                <div class="outcomes-heading">
-                    <h2>Outcomes that <span> keep you growing</span></h2>
-                </div>
-                <p class="outcomes-text">Join over 9,000 brands that have opted for our platform over competitors, for an advanced review collection solution.</p>
-                <ul>
-                    <li><span><i class="fa-solid fa-check"></i></span> More Afforable Cost</li>
-                    <li><span><i class="fa-solid fa-check"></i></span> The Insight Gained is Much Wider</li>
-                    <li><span><i class="fa-solid fa-check"></i></span> Exploration of good and tasty meals</li>
-                    <li><span><i class="fa-solid fa-check"></i></span> More Flexible Study Time</li>
-                    <li><span><i class="fa-solid fa-check"></i></span> Extremly High Sucess Rate</li>
-                </ul>
-            </div>
-            <div class="outcomes-col outcomes-img-col">
-                <svg class="blob blob1" viewBox="0 0 500 500">
-                    <path fill="#F8AEBB" d="M438,312.5Q401,375,338,398Q275,421,225,397Q175,373,139,324.5Q103,276,101,215Q99,154,145.5,114Q192,74,242,84Q292,94,347,109.5Q402,125,437,177.5Q472,230,438,312.5Z"/>
-                </svg>
-            
-                <div class="img-path">
-                    <img src="assets/images/outcomes/outcomes.webp" alt="">
-                </div>
-
-                <svg class="blob blob2" viewBox="0 0 500 500">
-                    <path fill="#F07189" d="
-                        M250,150  
-                        Q180,80,100,140  
-                        Q40,200,70,280  
-                        Q100,350,180,390  
-                        Q250,430,320,390  
-                        Q400,350,430,280  
-                        Q460,200,400,140  
-                        Q320,80,250,150Z" />
-                </svg>
-            
-            </div>
-        </div>
-    </section>
-    <!-- outcomes end -->
 
     <!-- footer -->
     <?php 
