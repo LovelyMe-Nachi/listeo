@@ -2,7 +2,7 @@
         <footer>
             <div class="footer-container">
                 <div class="footer-col">
-                    <a href="index.html" class="footer-logo"><img src="assets/images/logo/logo-1.png" alt=""></a>
+                    <a href="index.php" class="footer-logo"><img src="assets/images/logo/logo-1.png" alt=""></a>
 
                     <p>Listeo is an <b>all-in-one business entity</b> designed for your convenience. Whether you need a <b>place to stay, fitness coaching, event planning</b>, or everyday essentials like <b>laundry and great food</b>, we’ve got you covered. Live, explore, and enjoy life effortlessly.</p>
                 </div>
@@ -11,15 +11,15 @@
 
                     <div class="footer-links">
                         <ul>
-                            <li><span><i class="fa-solid fa-angle-right"></i></span> <a href="">Reviews</a></li>
-                            <li><span><i class="fa-solid fa-angle-right"></i></span> <a href="">bookmarks</a></li>
-                            <li><span><i class="fa-solid fa-angle-right"></i></span> <a href="">bookings</a></li>
-                            <li><span><i class="fa-solid fa-angle-right"></i></span> <a href="">contacts</a></li>
+                            <li><span><i class="fa-solid fa-angle-right"></i></span> <a href="reviews.php">Reviews</a></li>
+                            <li><span><i class="fa-solid fa-angle-right"></i></span> <a href="bookmarks.php">bookmarks</a></li>
+                            <li><span><i class="fa-solid fa-angle-right"></i></span> <a href="bookings.php">bookings</a></li>
+                            <li><span><i class="fa-solid fa-angle-right"></i></span> <a href="contacts.php">contacts</a></li>
                         </ul>
                         <ul>
                             <li><span><i class="fa-solid fa-angle-right"></i></span> <a href="">my profile</a></li>
                             <li><span><i class="fa-solid fa-angle-right"></i></span> <a href="">my listing</a></li>
-                            <li><span><i class="fa-solid fa-angle-right"></i></span> <a href="">blogs</a></li>
+                            <li><span><i class="fa-solid fa-angle-right"></i></span> <a href="blog.php">blogs</a></li>
                             <li><span><i class="fa-solid fa-angle-right"></i></span> <a href="">Add listing</a></li>
                         </ul>
                     </div>

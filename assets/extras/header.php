@@ -32,11 +32,11 @@
             <a href="" class="header-logo"><img src="assets/images/logo/logo-1.png" alt=""></a>
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="blog.php">Blog</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </nav>
 
@@ -62,7 +62,7 @@
                     </svg>
                 </span>
                 <span class="small-screen-menu"><i class="fa-solid fa-bars"></i></span>
-                <a href="#" class="header-sign-in">
+                <a href="login.php" class="header-sign-in">
                     <span><svg class="sign-in-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
                     <polyline points="10 17 15 12 10 7"></polyline>
@@ -80,13 +80,13 @@
             </div>
 
             <ul>
-                <li><a href="">home <span><i class="fa-solid fa-angle-right"></i></span></a></li>
-                <li><a href="">about <span><i class="fa-solid fa-angle-right"></i></span></a></li>
-                <li><a href="">pages <span><i class="fa-solid fa-angle-right"></i></span></a></li>
-                <li><a href="">contact <span><i class="fa-solid fa-angle-right"></i></span></a></li>
-                <li><a href="">services <span><i class="fa-solid fa-angle-right"></i></span></a></li>
-                <li><a href="">listings <span><i class="fa-solid fa-angle-right"></i></span></a></li>
-                <li><a href="">sign in <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                <li><a href="index.php">home <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                <li><a href="about.php">about <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                <li><a href="pages.php">pages <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                <li><a href="contact.php">contact <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                <li><a href="service.php">services <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                <li><a href="listings.php">listings <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                <li><a href="login.php">sign in <span><i class="fa-solid fa-angle-right"></i></span></a></li>
             </ul>
 
             <div class="small-screen-location">

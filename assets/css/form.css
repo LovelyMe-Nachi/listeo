@@ -16,14 +16,14 @@
 	overflow: hidden;
     border-radius: 12px;
     background-color: var(--neutral-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .form_wrapper .form_container{
-    width: 49%;
+    width: 50%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    transition: all 0.6s ease-in-out;
 }
 
 .form_wrapper .form_container form{
@@ -34,41 +34,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.form_wrapper .log_in_form_container{
-    left: 0;
-	z-index: 2;
-}
-
-.form_wrapper.right_panel_active .log_in_form_container {
-    opacity: 0;
-	transform: translateX(100%);
-}
-
-.form_wrapper .sign_up_form_container{
-    left: 0;
-	opacity: 0;
-	z-index: 1;
-}
-
-.form_wrapper.right_panel_active .sign_up_form_container{
-    transform: translateX(100%);
-	opacity: 1;
-	z-index: 5;
-	animation: slide 0.6s;
-}
-
-@keyframes slide {
-	0%, 49.99% {
-		opacity: 0;
-		z-index: 1;
-	}
-	
-	50%, 100% {
-		opacity: 1;
-		z-index: 5;
-	}
 }
 
 .form_wrapper h1 {
@@ -144,9 +109,9 @@
 	margin: 15px 0;
 }
 
-.form_wrapper button {
-
-	border-radius: 20px;
+.form_wrapper button,
+.form_wrapper .form_about a {
+	border-radius: 25px;
 	border: 1px solid var(--primary-color);
 	background-color: var(--primary-color);
 	color: var(--neutral-color);
@@ -160,82 +125,40 @@
 	transition: transform 80ms ease-in;
 } 
 
-.form_wrapper button:active {
+.form_wrapper button:active,
+.form_wrapper .form_about a {
 	transform: scale(0.95);
 }
 
-.form_wrapper button:focus {
+.form_wrapper button:focus,
+.form_wrapper .form_about a {
 	outline: none;
 } 
 
-.form_wrapper .overlay-container {
-	position: absolute;
-	top: 0;
-	left: 50%;
+.form_wrapper .form_about_container {
 	width: 50%;
 	height: 100%;
 	overflow: hidden;
-	transition: transform 0.6s ease-in-out;
-	z-index: 100;
 }
 
-.form_wrapper.right_panel_active .overlay-container{
-	transform: translateX(-100%);
-}
-
-.form_wrapper .overlay {
-	background: var(--primary-color);
-	background: -webkit-linear-gradient(to right, var(--linear-color), var(--primary-color));
+.form_wrapper .form_about {
+	height: 100%;
+	width: 100%;
 	background: linear-gradient(to right, var(--linear-color), var(--primary-color));
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
-	position: relative;
-    color: var(--neutral-color);
-	left: -100%;
-	height: 100%;
-	width: 200%;
-  	transform: translateX(0);
-	transition: transform 0.6s ease-in-out;
-}
-.form_wrapper .overlay button{
-	border-color: var(--neutral-color);
-}
-
-.form_wrapper.right_panel_active .overlay {
-  	transform: translateX(50%);
-}
-
-.form_wrapper .overlay-panel {
-	position: absolute;
 	display: flex;
 	align-items: center;
-	justify-content: center;transition: ;
+	justify-content: center;
 	flex-direction: column;
-	padding: 0 40px;
-	text-align: center;
-	top: 0;
-	height: 100%;
-	width: 50%;
-	transform: translateX(0);
-	transition: transform 0.6s ease-in-out;
+	padding: 20px;
+    color: var(--neutral-color);
 }
 
-.form_wrapper .overlay-left {
-	transform: translateX(-20%);
-}
-
-.form_wrapper.right_panel_active .overlay-left {
-	transform: translateX(0);
-}
-
-.form_wrapper .overlay-right {
-	right: 0;
-	transform: translateX(0);
-}
-
-.form_wrapper.right_panel_active .overlay-right {
-	transform: translateX(20%);
+.form_wrapper .form_about a{
+	border-color: var(--neutral-color);
+	text-decoration: none;
 }
 
 @media (max-width: 990px) {
